@@ -1,0 +1,144 @@
+/* 1. GLOBALE INSTELLINGEN */
+    body {
+    /* Dit maakt een verloop van diep NS-blauw naar een stoere, donkere spoorweg-tint */
+    background: linear-gradient(135deg, #002d62 0%, #1c2d42 100%);
+    
+    /* Dit zorgt ervoor dat de achtergrond mooi meeskrallt als de pagina lang is */
+    background-attachment: fixed; 
+    
+    color: #1c2d42;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 2. DE HEADER (BOVENBALK) */
+header {
+    background-color: #ffc914; /* NS Geel */
+    color: #002d62; /* NS Blauw */
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Het NS-logo nagebouwd in CSS */
+.ns-logo-placeholder {
+    width: 65px;
+    height: 35px;
+    background-color: #002d62;
+    margin: 0 auto 15px auto;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffc914;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* 3. DE LAYOUT VAN DE PAGINA */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Categorie koppen (zoals Moderne Generatie) */
+h2 {
+    color: #ffffff; /* Veranderd naar wit zodat het perfect leesbaar is op donkerblauw */
+    font-size: 1.8rem;
+    border-bottom: 4px solid #ffc914;
+    padding-bottom: 8px;
+    margin-top: 50px;
+}
+
+/* 4. DE TREINKAARTJES */
+.trein-kaart {
+    background-color: white;
+    border-left: 6px solid #002d62; /* Blauwe NS-rand */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    
+    /* Dit zorgt dat tekst en foto strak naast elkaar staan */
+    display: flex; 
+    gap: 25px;
+    align-items: center;
+    
+    /* Zorgt voor een soepele overgang bij het eroverheen bewegen met de muis */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Effect als je met je muis over een trein-kaartje zweeft */
+.trein-kaart:hover {
+    transform: translateY(-4px); /* Kaartje komt een klein stukje omhoog */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Schaduw wordt dieper */
+    cursor: pointer;
+}
+
+/* De tekst binnen een kaartje */
+.trein-info {
+    flex: 1; /* Neemt alle resterende ruimte aan de linkerkant in */
+}
+
+.trein-kaart h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #002d62;
+    font-size: 1.4rem;
+}
+
+.trein-kaart p {
+    margin: 6px 0;
+    line-height: 1.5;
+}
+
+.trein-kaart strong {
+    color: #002d62;
+}
+
+/* 5. DE FOTO'S VAN DE TREINEN */
+.
+/* Styling voor de zoekbalk container */
+.zoek-container {
+    max-width: 1000px;
+    margin: 30px auto 10px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* De zoekbalk zelf */
+#treinZoeker {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    border: 3px solid #ffc914; /* NS Geel randje */
+    border-radius: 30px; /* Mooie ronde hoeken */
+    outline: none;
+    background-color: white;
+    color: #002d62;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: box-shadow 0.2s ease;
+}
+
+/* Als je in de zoekbalk klikt */
+#treinZoeker:focus {
+    box-shadow: 0 6px 15px rgba(255, 201, 20, 0.4);
+}
