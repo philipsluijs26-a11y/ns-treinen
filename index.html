@@ -3,372 +3,441 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>De Complete NS Treinen Mega-Database</title>
+    <title>NS Treinen Mega-Database</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <header>
-        <div class="ns-logo-placeholder">NS</div>
-        <h1>NS Treinen Database: De Complete Geschiedenis</h1>
-        <p>Elk materieel type ooit, van 1839 tot nu — inclusief de grootste successen en pijnlijkste flops.</p>
-    </header>
-
+        <div class="header-content">
+            <h1>NS Treinen Mega-Database</h1>
+            <p>Ontdek de geschiedenis en techniek van de Nederlandse treinen</p>
+        </div>
     </header>
 
     <div class="zoek-container">
-        <input type="text" id="treinZoeker" placeholder="Zoek naar een trein, type of status (bijv. VIRM, stoom, flop)...">
+        <input type="text" id="treinZoeker" placeholder="Zoek naar een trein (bijv. VIRM, ICNG, Kameel)...">
     </div>
 
-    <main>
-
-    <main>
-
-        <section class="trein-categorie">
-            <h2>Het Stoomtijdperk (De Basis)</h2>
-            
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>De Arend</h3>
-                    <p><strong>Type:</strong> Stoomlocomotief | <strong>Status:</strong> Historisch (1839)</p>
-                    <p>De allereerste stoomtrein in Nederland. Dit icoon reed de historische eerste rit tussen Amsterdam en Haarlem.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Arend_%28trein%29.jpg" alt="De Arend">
+    <main class="database-container">
+        
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/virm.jpg" alt="VIRM">
+            <div class="trein-info">
+                <h3>VIRM (Verlengd InterRegio Materieel)</h3>
+                <p><strong>Type:</strong> Dubbeldekker Intercity</p>
+                <p><strong>Jaar:</strong> 1994 - heden</p>
+                <p>De bekendste dubbeldekker van de NS. Rijdt op bijna alle grote Intercity-trajecten in Nederland.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>Snelheid</h3>
-                    <p><strong>Type:</strong> Stoomlocomotief | <strong>Status:</strong> Historisch (1839)</p>
-                    <p>Het zuster-locomotiefje van De Arend. Samen opgebouwd in de allereerste beginjaren van het Nederlandse spoor.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/9/90/Model_Snelheid_Spoorwegmuseum.jpg" alt="Snelheid">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/icm.jpg" alt="ICM">
+            <div class="trein-info">
+                <h3>ICM (Koploper)</h3>
+                <p><strong>Type:</strong> Intercity</p>
+                <p><strong>Jaar:</strong> 1977 - heden</p>
+                <p>Bekend om de hoge doorloopkop. Reizigers konden vroeger tijdens het rijden doorlopen naar een ander treinstel.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>NS 3700 (Jumbo)</h3>
-                    <p><strong>Type:</strong> Sneltreinstoomlocomotief | <strong>Status:</strong> Museummaterieel</p>
-                    <p>Een machtige en super sterke stoomlocomotief. Kreeg de bijnaam 'Jumbo' vanwege zijn enorme trekkracht en ongekende betrouwbaarheid.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/d/da/Stoomloc_NS_3737.jpg" alt="NS 3700 Jumbo">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/icng.jpg" alt="ICNG">
+            <div class="trein-info">
+                <h3>ICNG (Intercity Nieuwe Generatie)</h3>
+                <p><strong>Type:</strong> Snelle Intercity</p>
+                <p><strong>Jaar:</strong> 2023 - heden</p>
+                <p>De nieuwste flitstrein van de NS. Kan op de hogesnelheidslijn (HSL) wel 200 km/u rijden.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>NS 3900</h3>
-                    <p><strong>Type:</strong> Zware Sneltreinstoomlocomotief | <strong>Status:</strong> Uit dienst</p>
-                    <p>De grotere, zwaardere en modernere opvolger van de 3700-serie, speciaal gebouwd voor de zwaarste reizigerstreinen van die tijd.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/5/52/NS_3908_met_trein_te_Eindhoven_%281930-1940%29.jpg" alt="NS 3900">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/ddar.jpg" alt="DD-AR">
+            <div class="trein-info">
+                <h3>DD-AR (Dubbeldeksagglomeratiereijtuig)</h3>
+                <p><strong>Type:</strong> Dubbeldekker Sprinter / Stoptrein</p>
+                <p><strong>Jaar:</strong> 1992 - 2024</p>
+                <p>Klassieke dubbeldekker die jarenlang werd getrokken of geduwd door een locomotief uit de 1700-serie.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>NS 6300 (Beul)</h3>
-                    <p><strong>Type:</strong> Tenderstoomlocomotief | <strong>Status:</strong> Museummaterieel</p>
-                    <p>De grootste en zwaarste tenderlocomotieven van de NS. Kreeg de legendarische bijnaam 'De Beul' omdat het werk op deze kolossen loodzwaar was voor de stoker.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/e/ea/NS_6317_Spoorwegmuseum.jpg" alt="NS 6300 Beul">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/slt.jpg" alt="SLT">
+            <div class="trein-info">
+                <h3>SLT (Sprinter Lighttrain)</h3>
+                <p><strong>Type:</strong> Sprinter</p>
+                <p><strong>Jaar:</strong> 2008 - heden</p>
+                <p>Gebouwd voor kortere afstanden met veel deuren om snel in en uit te stappen. Heeft geen toiletten van binnen.</p>
             </div>
-        </section>
-        <section class="trein-categorie">
-            <h2>De Klassieke 'Mat' Series (Pre- en Post-War)</h2>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>Mat '24 (Blokkendoos)</h3>
-                    <p><strong>Type:</strong> Elektrische Voorstadstrein | <strong>Status:</strong> Museummaterieel</p>
-                    <p>Herkenbaar aan het hoekige, zware en houten/stalen ontwerp. Dit waren de allereerste elektrische treinen die massaal over het hoofdnet reden.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Mat_24_Amersfoort_2014.jpg" alt="Mat 24 Blokkendoos">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/sng.jpg" alt="SNG">
+            <div class="trein-info">
+                <h3>SNG (Sprinter Nieuwe Generatie)</h3>
+                <p><strong>Type:</strong> Moderne Sprinter</p>
+                <p><strong>Jaar:</strong> 2018 - heden</p>
+                <p>Comfortabele, moderne sprinter met brede instappen, stopcontacten, USB-poorten en wél een rolstoeltoegankelijk toilet.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>Mat '34 (Diesel-drie)</h3>
-                    <p><strong>Type:</strong> Diesel-elektrisch stroomlijntreinstel | <strong>Status:</strong> Uit dienst</p>
-                    <p>De allereerste gestroomlijnde treinen van de NS. Hiermee begon de grote modernisering en de flinke snelheidsverhoging op het spoor.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/a/a2/HUA-151048-Afbeelding_van_het_diesel-elektrische_driewagentreinstel_mat._1934_nr._11_van_de_N.S._tijdens_een_proefrit.jpg" alt="Mat 34 Diesel-drie">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/flirt.jpg" alt="FLIRT">
+            <div class="trein-info">
+                <h3>NS FLIRT</h3>
+                <p><strong>Type:</strong> Sprinter</p>
+                <p><strong>Jaar:</strong> 2016 - heden</p>
+                <p>Lichte, snel optrekkende treinen die door de NS werden aangeschaft om het materieeltekort op te vangen.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>Mat '35</h3>
-                    <p><strong>Type:</strong> Elektrisch stroomlijntreinstel | <strong>Status:</strong> Uit dienst</p>
-                    <p>De elektrische variant gebaseerd op de gestroomlijnde vormen van de Diesel-drie, speciaal ontworpen voor de "Hoofdwegen" van het geëlektroficeerde spoor.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/7/77/HUA-151121-Afbeelding_van_het_elektrische_tweewagentreinstel_mat_1935_nr_202_van_de_NS_op_het_stationsemplacement_te_Utrecht_CS.jpg" alt="Mat 35">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/dm90.jpg" alt="DM90">
+            <div class="trein-info">
+                <h3>DM90 (Buffel)</h3>
+                <p><strong>Type:</strong> Dieseltrein</p>
+                <p><strong>Jaar:</strong> 1996 - 2017</p>
+                <p>De laatste diesel-stroomlijntreinen van de NS, herkenbaar aan hun brede koppen en ingezet op niet-geëlektrificeerde lijnen.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>Mat '36</h3>
-                    <p><strong>Type:</strong> Elektrisch stroomlijntreinstel | <strong>Status:</strong> Uit dienst</p>
-                    <p>Een directe doorontwikkeling van Mat '35. Gebouwd als twee-, drie- en vierwagenstellen om flexibel in te kunnen spelen op drukke reizigersstromen.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/e/ed/HUA-151145-Afbeelding_van_het_elektrische_driewagentreinstel_mat_1936_nr_416_van_de_NS_langs_het_perron_van_het_station_Arnhem.jpg" alt="Mat 36">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/kameel.jpg" alt="De Kameel">
+            <div class="trein-info">
+                <h3>NS 20 (De Kameel)</h3>
+                <p><strong>Type:</strong> Directietrein / Inspectierijtuig</p>
+                <p><strong>Jaar:</strong> 1954 - heden (Museumtrein)</p>
+                <p>Beroemd motorrijtuig met twee bulten op het dak waar de machinisten in zitten. Nu te bewonderen in het Spoorwegmuseum.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>Mat '40</h3>
-                    <p><strong>Type:</strong> Elektrisch sneltreinstel | <strong>Status:</strong> Uit dienst</p>
-                    <p>Prachtige, gestroomlijnde treinen gebouwd vlak voor de Tweede Wereldoorlog. Hadden voor die tijd een zeer hoge topsnelheid van maar liefst 120 km/u.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/a/a2/HUA-151240-Afbeelding_van_het_elektrische_vijfwagentreinstel_mat_1940_nr_801_van_de_NS_te_Utrecht_CS.jpg" alt="Mat 40">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/mat64.jpg" alt="Mat '64">
+            <div class="trein-info">
+                <h3>Mat '64 (Apenkop)</h3>
+                <p><strong>Type:</strong> Stoptrein / Intercity</p>
+                <p><strong>Jaar:</strong> 1961 - 2016</p>
+                <p>Een absolute icoon op het Nederlandse spoor. Heeft tientallen jaren trouwe dienst bewezen.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>Mat '46 (Muizenkop)</h3>
-                    <p><strong>Type:</strong> Elektrisch treinstel | <strong>Status:</strong> Uit dienst</p>
-                    <p>Kreeg door zijn spits toelopende front met de twee karakteristieke kleine ruitjes de onmiskenbare bijnaam 'Muizenkop'. Cruciaal voor de wederopbouw na de oorlog.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/2/23/Mat_46_273_Spoorwegmuseum.jpg" alt="Mat 46 Muizenkop">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/mat54.jpg" alt="Mat '54">
+            <div class="trein-info">
+                <h3>Mat '54 (Hondekop)</h3>
+                <p><strong>Type:</strong> Intercity</p>
+                <p><strong>Jaar:</strong> 1954 - 1996</p>
+                <p>Zware, oerdegelijke treinen met een opvallende neus die ontworpen was om de machinist te beschermen bij botsingen.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>Mat '54 (Hondenkop)</h3>
-                    <p><strong>Type:</strong> Intercity-treinstel | <strong>Status:</strong> Museummaterieel</p>
-                    <p>De absolute icoon van de jaren '60 en '70. Super zwaar stalen neus gebouwd voor maximale veiligheid van de machinist, wat zorgde for de bekende bolle neus.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/3/30/Mat_54_386_Spoorwegmuseum.jpg" alt="Mat 54 Hondenkop">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/mat46.jpg" alt="Mat '46">
+            <div class="trein-info">
+                <h3>Mat '46 (Muizeneus)</h3>
+                <p><strong>Type:</strong> Stoomlijntrein</p>
+                <p><strong>Jaar:</strong> 1946 - 1983</p>
+                <p>Gebouwd vlak na de Tweede Wereldoorlog om het spoorwegnet snel weer op te bouwen. Herkenbaar aan de gestroomlijnde neus.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>Mat '57 (Benelux-Hondenkop)</h3>
-                    <p><strong>Type:</strong> Internationaal treinstel | <strong>Status:</strong> Uit dienst</p>
-                    <p>Technisch aangepaste Hondenkop in een donkerblauwe kleur met een gele streep, gebouwd om direct te wisselen tussen de Nederlandse en Belgische stroomspanning.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/f/ff/HUA-151944-Afbeelding_van_het_elektrische_Benelux-tweewagentreinstel_mat._1957_nr._1201_van_de_N.S._te_Amsterdam_C.S..jpg" alt="Mat 57 Benelux">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/mat36.jpg" alt="Mat '36">
+            <div class="trein-info">
+                <h3>Mat '36</h3>
+                <p><strong>Type:</strong> Elektrisch Stroomlijnmatrieel</p>
+                <p><strong>Jaar:</strong> 1936 - 1970</p>
+                <p>Ontworpen voor de snelle elektrische diensten tussen de grote steden in de jaren 30.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>Mat '64 (Plan V / Plan T / Apenkop)</h3>
-                    <p><strong>Type:</strong> Stoptrein / Standaardstreekvervoer | <strong>Status:</strong> Museummaterieel</p>
-                    <p>Decennialang de absolute ruggengraat van het stoptreinnetwerk. Onverwoestbaar materiaal met de iconische schuifdeuren en het felle, herkenbare startgeluid.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/c/c5/NS_Plan_V_Treinstel_419_Groningen.jpg" alt="Mat 64 Apenkop">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/mat24.jpg" alt="Mat '24">
+            <div class="trein-info">
+                <h3>Mat '24 (Blokkendoos)</h3>
+                <p><strong>Type:</strong> Eerste Elektrische Intercity</p>
+                <p><strong>Jaar:</strong> 1924 - 1959</p>
+                <p>De allereerste elektrische treinen van de NS. Kregen hun legendarische bijnaam door hun hoekige, houten en stalen vormen.</p>
             </div>
-        </section>
+        </div>
 
-        <section class="trein-categorie">
-            <h2>Klassieke Elektrische Locomotieven</h2>
-
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>NS 1000</h3>
-                    <p><strong>Type:</strong> Elektrische Locomotief | <strong>Status:</strong> Uit dienst</p>
-                    <p>De allereerste zware elektrische locomotiefserie van de NS. Ontworpen in Zwitserland, maar kende in de praktijk helaas veel mechanische kinderziektes.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/HUA-152140-Afbeelding_van_de_elektrische_locomotief_nr_1008_serie_1000_van_de_NS_met_een_reizigerstrein_te_Utrecht_CS.jpg" alt="NS 1000">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/arend.jpg" alt="De Arend">
+            <div class="trein-info">
+                <h3>De Arend</h3>
+                <p><strong>Type:</strong> Stoomlocomotief</p>
+                <p><strong>Jaar:</strong> 1839 - 1848</p>
+                <p>De allereerste stoomtrein die in Nederland reed, tussen Amsterdam en Haarlem. Een historische legende!</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>NS 1100</h3>
-                    <p><strong>Type:</strong> Elektrische Locomotief | <strong>Status:</strong> Museummaterieel</p>
-                    <p>Frans ontwerp. Compacte maar felle en sterke locs die na ernstige ongevallen een opvallende stalen 'botsneus' kregen om de machinist beter te beschermen.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/1/14/NS_1122_in_het_Spoorwegmuseum.jpg" alt="NS 1100">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/sik.jpg" alt="Sik">
+            <div class="trein-info">
+                <h3>NS 200-serie (Sik)</h3>
+                <p><strong>Type:</strong> Rangeerlocomotief</p>
+                <p><strong>Jaar:</strong> 1934 - 2008</p>
+                <p>Kleine, lichte diesellocomotieven die op bijna elk station werden gebruikt om goederenwagons te verplaatsen.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>NS 1200</h3>
-                    <p><strong>Type:</strong> Elektrische Locomotief | <strong>Status:</strong> Museummaterieel / Gedeeltelijk Cargo</p>
-                    <p>Amerikaans-Nederlands ontwerp. Robuuste machines met een herkenbaar zwaar ronkend geluid die werkelijk onverwoestbaar bleken te zijn op de baan.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/4/44/NS_1201_Amersfoort_2013.jpg" alt="NS 1200">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/ns2400.jpg" alt="NS 2400">
+            <div class="trein-info">
+                <h3>NS 2400-serie</h3>
+                <p><strong>Type:</strong> Diesel-elektrische Locomotief</p>
+                <p><strong>Jaar:</strong> 1954 - 1991</p>
+                <p>Veelzijdige locs die zowel voor goederentreinen als lichte reizigerstreinen werden ingezet.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>NS 1300</h3>
-                    <p><strong>Type:</strong> Zware Elektrische Locomotief | <strong>Status:</strong> Museummaterieel</p>
-                    <p>De grote Franse broer van de 1100-serie. Krachtige zes-assige krachtpatsers bedoeld voor loodzware goederentreinen van die tijd.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/d/de/NS_1302_Spoorwegmuseum.jpg" alt="NS 1300">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/ns2200.jpg" alt="NS 2200">
+            <div class="trein-info">
+                <h3>NS 2200-serie</h3>
+                <p><strong>Type:</strong> Diesel-elektrische Locomotief</p>
+                <p><strong>Jaar:</strong> 1955 - 1998</p>
+                <p>Amerikaans ontwerp, gebouwd in Frankrijk en Nederland. Bekend om hun ronkende geluid bij zware goederentreinen.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>NS 1500</h3>
-                    <p><strong>Type:</strong> Elektrische Locomotief | <strong>Status:</strong> Uit dienst</p>
-                    <p>Overgenomen van de Britse spoorwegen (Class 27000). Een relatief kleine maar zeer geliefde serie die vooral ingezet werd rond Arnhem en Venlo.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/3/3b/NS_1501_Rotterdam_Noord_1985.jpg" alt="NS 1500">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/ns1100.jpg" alt="NS 1100">
+            <div class="trein-info">
+                <h3>NS 1100-serie</h3>
+                <p><strong>Type:</strong> Elektrische Locomotief</p>
+                <p><strong>Jaar:</strong> 1950 - 1999</p>
+                <p>Klassieke Franse locomotieven. Kregen later een opvallende botsneus voor extra veiligheid voor de machinist.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>NS 1600 / 1700 / 1800</h3>
-                    <p><strong>Type:</strong> Universele Elektrische Locomotief | <strong>Status:</strong> Uit dienst</p>
-                    <p>De bekende Franse krachtpatsers (Alsthom-ontwerp). Jarenlang trokken en duwden zij de dubbeldekkers (DD-AR) en zware internationale treinen.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/5/52/NS_1738_met_een_DD-AR_stam_te_Deventer.jpg" alt="NS 1700">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/ns1200.jpg" alt="NS 1200">
+            <div class="trein-info">
+                <h3>NS 1200-serie</h3>
+                <p><strong>Type:</strong> Elektrische Locomotief</p>
+                <p><strong>Jaar:</strong> 1951 - 1998</p>
+                <p>Robuuste, Amerikaanse ontwerpen die onverwoestbaar bleken en loodzware treinen konden trekken.</p>
             </div>
-            <section class="trein-categorie">
-            <h2>Moderne Generatie (Intercity's & Sprinters)</h2>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>SGM (Plan Y / Sprinter)</h3>
-                    <p><strong>Type:</strong> Eerste échte Sprinter | <strong>Status:</strong> Uit dienst</p>
-                    <p>Speciaal ontworpen voor razendsnel optrekken, snel remmen en veel brede deuren, ideaal voor de korte afstanden in de drukke Randstad.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/c/cb/SGMm_2971_te_Utrecht_Maliebaan.jpg" alt="SGM Sprinter">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/ns1300.jpg" alt="NS 1300">
+            <div class="trein-info">
+                <h3>NS 1300-serie</h3>
+                <p><strong>Type:</strong> Krachtige Elektrische Locomotief</p>
+                <p><strong>Jaar:</strong> 1952 - 2000</p>
+                <p>De sterkste locomotieven die de NS destijds had. Werden vooral gebruikt voor internationale treinen en zwaar goederenvervoer.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>ICM (Koploper)</h3>
-                    <p><strong>Type:</strong> Intercity-treinstel | <strong>Status:</strong> Rijdt nu</p>
-                    <p>De legendarische intercity met de doorloopkop en de verhoogde 'cockpit' voor de machinist bovenop het reizigerscompartiment.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/7/7b/NS_ICMm_4011_Apeldoorn.jpg" alt="ICM Koploper">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/ns1600.jpg" alt="NS 1600">
+            <div class="trein-info">
+                <h3>NS 1600 / 1800-serie</h3>
+                <p><strong>Type:</strong> Universele Elektrische Locomotief</p>
+                <p><strong>Jaar:</strong> 1981 - 2020</p>
+                <p>De krachtige Franse krachtpatsers die decennialang IC-rijtuigen en DD-AR dubbeldekkers trokken.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>DD-AR</h3>
-                    <p><strong>Type:</strong> Dubbeldeksstoptrein | <strong>Status:</strong> Uit dienst</p>
-                    <p>De herkenbare, ietwat sobere dubbeldekkers met de kaarsrechte buitenwanden. Werden getrokken of geduwd door een locomotief serie 1700.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/e/e0/DD-AR_7311_te_Almere_Oostvaarders.jpg" alt="DD-AR">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/ns1700.jpg" alt="NS 1700">
+            <div class="trein-info">
+                <h3>NS 1700-serie</h3>
+                <p><strong>Type:</strong> Elektrische Locomotief</p>
+                <p><strong>Jaar:</strong> 1991 - 2023</p>
+                <p>Leken sprekend op de 1600, maar hadden andere elektronica. Werden tot voor kort gebruikt voor de Intercity naar Berlijn.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>DD-Z (Nieuwe Intercity Dubbeldekker)</h3>
-                    <p><strong>Type:</strong> Intercity Dubbeldekker | <strong>Status:</strong> Rijdt nu</p>
-                    <p>Compleet omgebouwde en grondig gemoderniseerde DD-AR rijtuigen. Nu voorzien van een strak blauw/geel Intercity-interieur en moderne reizigersschermen.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/0/07/DDZ_7524_Apeldoorn.jpg" alt="DD-Z">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/de1.jpg" alt="DE-1">
+            <div class="trein-info">
+                <h3>NS DE-1 (Blauwe Engel)</h3>
+                <p><strong>Type:</strong> Diesel-elektrisch Motorrijtuig</p>
+                <p><strong>Jaar:</strong> 1953 - 1985</p>
+                <p>Ingezet op de niet-geëlektrificeerde nevenlijnen in Groningen, Friesland en de Achterhoek.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>IRM / VIRM (Regiorunner)</h3>
-                    <p><strong>Type:</strong> Intercity Dubbeldekker | <strong>Status:</strong> Rijdt nu</p>
-                    <p>De absolute koning van het Nederlandse spoor qua capaciteit. Comfortabel, ruim en werkelijk op bijna elk belangrijk Intercity-traject te vinden.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/b/b3/VIRM_8656_te_Utrecht_Centraal.jpg" alt="VIRM">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/de3.jpg" alt="DE-3">
+            <div class="trein-info">
+                <h3>NS DE-3 (Plan U)</h3>
+                <p><strong>Type:</strong> Diesel-elektrisch Treinstel</p>
+                <p><strong>Jaar:</strong> 1960 - 2003</p>
+                <p>Drie-delige dieseltreinen met een prachtig ronkende Werkspoor-motor. Een bekende verschijning in de provincies.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>SLT (Sprinter Lighttrain)</h3>
-                    <p><strong>Type:</strong> Sprinter | <strong>Status:</strong> Rijdt nu</p>
-                    <p>Lichte, transparante treinen zonder tussendeuren met enorm veel glaswerk, volledig gebouwd voor een snelle reizigersdoorstroom.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/0/04/SLT_2411_te_Utrecht_Centraal.jpg" alt="SLT Sprinter">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/wadloper.jpg" alt="Wadloper">
+            <div class="trein-info">
+                <h3>DH1 / DH2 (Wadloper)</h3>
+                <p><strong>Type:</strong> Diesel-hydraulische Trein</p>
+                <p><strong>Jaar:</strong> 1981 - 2008</p>
+                <p>Speciaal gebouwd voor de noordelijke spoorlijnen rondom Groningen en Leeuwarden.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>FLIRT</h3>
-                    <p><strong>Type:</strong> Sprinter / Regiotrein | <strong>Status:</strong> Rijdt nu</p>
-                    <p>Gebouwd door het Zwitserse Stadler. Rijdt super stil, trekt bizar snel op en is modern uitgerust met o.a. USB-stopcontacten bij de zitplaatsen.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/4/47/NS_Flirt_2515_Utrecht_Centraal.jpg" alt="NS FLIRT">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/sm90.jpg" alt="Railhopper">
+            <div class="trein-info">
+                <h3>SM90 (Railhopper)</h3>
+                <p><strong>Type:</strong> Prototype Stoptrein</p>
+                <p><strong>Jaar:</strong> 1994 - 2005</p>
+                <p>Een zeldzame verschijning. Er zijn er maar 9 van gebouwd en ze werden al snel uit dienst gehaald wegens storingen.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>SNG (Sprinter Nieuwe Generatie)</h3>
-                    <p><strong>Type:</strong> Sprinter | <strong>Status:</strong> Rijdt nu</p>
-                    <p>Gebouwd door het Spaanse CAF. De huidige standaard-sprinter van de NS met een ruim, rolstoeltoegankelijk toilet en een fris design.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/2/29/SNG_2314_Groningen.jpg" alt="SNG Sprinter">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/ddm1.jpg" alt="DDM-1">
+            <div class="trein-info">
+                <h3>DDM-1 (Dubbeldeksmaterieel)</h3>
+                <p><strong>Type:</strong> Eerste NS Dubbeldekker</p>
+                <p><strong>Jaar:</strong> 1985 - 2019</p>
+                <p>De allereerste dubbeldeksrijtuigen van Nederland, herkenbaar aan de felgekleurde plastic stoelen van binnen.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart">
-                <div class="trein-info">
-                    <h3>ICNG (Intercity Nieuwe Generatie)</h3>
-                    <p><strong>Type:</strong> High-speed Intercity | <strong>Status:</strong> Instroomfase / Rijdt nu</p>
-                    <p>De nieuwste trots op het spoor. Geschikt voor 200 km/u op de HSL en uitgerust met een schitterend modern interieur met lounges.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/7/70/ICNG_3115_te_Utrecht_Centraal.jpg" alt="ICNG">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/icr.jpg" alt="ICR">
+            <div class="trein-info">
+                <h3>ICR (Intercity Rijtuig)</h3>
+                <p><strong>Type:</strong> Getrokken Intercity-rijtuigen</p>
+                <p><strong>Jaar:</strong> 1980 - 2025</p>
+                <p>Losse reizigersrijtuigen die getrokken worden door een locomotief. Werden tot voor kort veel gebruikt op de HSL met Traxx-locs.</p>
             </div>
-        </section>
+        </div>
 
-
-        <section class="trein-categorie flop-sectie">
-            <h2>De Geflopte Projecten & Pechtreinen</h2>
-
-            <div class="trein-kaart flop">
-                <div class="trein-info">
-                    <h3>V250 (Fyra Albatros)</h3>
-                    <p><strong>Reden van Flop:</strong> Ernstige constructiefouten & Uitval</p>
-                    <p>De grootste flop uit de Nederlandse geschiedenis. Viel na een paar weken in de winter al uit elkaar door ijs en loslatende bodemplaten. Direct verbannen en teruggestuurd.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Fyra_V250_Amsterdam_Centraal.jpg" alt="V250 Fyra Flop">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/traxx.jpg" alt="Traxx">
+            <div class="trein-info">
+                <h3>NS Bombardier TRAXX (Baureihe 186)</h3>
+                <p><strong>Type:</strong> HSL Locomotief</p>
+                <p><strong>Jaar:</strong> 2014 - 2025</p>
+                <p>Geleasde locomotieven die de NS snel inzette op de Hogesnelheidslijn om ICR-rijtuigen te trekken.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart flop">
-                <div class="trein-info">
-                    <h3>SM '90 (Railhopper)</h3>
-                    <p><strong>Reden van Flop:</strong> Te ingewikkeld & Constant defect</p>
-                    <p>Er zijn er maar 9 gebouwd als prototype. De treinen zaten zó vol ongeteste, hypermoderne elektronica dat ze vaker in de werkplaats stonden dan op de rails. Project werd snel gestaakt.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/1/13/NS_SM90_Railhopper_2103_Zwolle.jpg" alt="SM90 Railhopper Flop">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/mat40.jpg" alt="Mat '40">
+            <div class="trein-info">
+                <h3>Mat '40</h3>
+                <p><strong>Type:</strong> Elektrisch Stroomlijnmatrieel</p>
+                <p><strong>Jaar:</strong> 1940 - 1972</p>
+                <p>Besteld vlak voor de Tweede Wereldoorlog. Veel treinstellen raakten zwaar beschadigd tijdens de oorlogsjaren.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart flop">
-                <div class="trein-info">
-                    <h3>DM '90 (Buffel)</h3>
-                    <p><strong>Reden van Flop:</strong> Strategische misser (Vroegtijdig overbodig)</p>
-                    <p>Technisch gezien een fantastische, sterke dieseltrein. Maar omdat NS bijna direct alle resterende diesellijnen ging elektrificeren, stonden ze al heel snel werkloos aan de kant.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/a/ad/DM90_Buffel_3443_Zwolle.jpg" alt="DM90 Buffel">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/ns3700.jpg" alt="NS 3737">
+            <div class="trein-info">
+                <h3>NS 3700-serie (Jumbo)</h3>
+                <p><strong>Type:</strong> Grote Stoomlocomotief</p>
+                <p><strong>Jaar:</strong> 1910 - 1958</p>
+                <p>De NS 3737 was de allerlaatste stoomlocomotief die een officiële rit reed voor de NS in januari 1958.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart flop">
-                <div class="trein-info">
-                    <h3>NS 2800 (Snorrebaard)</h3>
-                    <p><strong>Reden van Flop:</strong> Onbetrouwbaar diesel-hydraulisch prototype</p>
-                    <p>Gebouwd als testlocomotief (gemarkeerd met een opvallende gele snor op de neus). Was extreem storingsgevoelig, had veel te weinig vermogen en is al heel snel roemloos gesloopt.</p>
-                </div>
-                <img class="trein-foto" src="https://upload.wikimedia.org/wikipedia/commons/3/36/HUA-153406-Afbeelding_van_de_diesel-hydraulische_locomotief_nr._2801_serie_2800_van_de_N.S._te_Utrecht_C.S..jpg" alt="NS 2800 Snorrebaard">
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/ice.jpg" alt="ICE">
+            <div class="trein-info">
+                <h3>ICE 3M (Baureihe 406)</h3>
+                <p><strong>Type:</strong> Internationale Hogesnelheidstrein</p>
+                <p><strong>Jaar:</strong> 2000 - heden</p>
+                <p>De wit-rode flitstrein met de NS-logo's erop die reizigers met 300 km/u van Amsterdam naar Frankfurt brengt.</p>
             </div>
+        </div>
 
-            <div class="trein-kaart flop">
-                <div class="trein-info">
-                    <h3>NS 6000</h3>
-                    <p><strong>Reden van Flop:</strong> Onstabiele, gevaarlijke stoomlocomotief</p>
-                    <p>Een serie stoomlocomotieven die
-                        
-            door een ontwerpfout in de gewichts
-            <footer>
+        <div class="trein-kaart">
+            <img class="trein-foto" src="images/eurostar.jpg" alt="Eurostar">
+            <div class="trein-info">
+                <h3>Eurostar PBKA (Thalys)</h3>
+                <p><strong>Type:</strong> Internationale Hogesnelheidstrein</p>
+                <p><strong>Jaar:</strong> 1997 - heden</p>
+                <p>De bekende donkerrode treinen die Amsterdam verbinden met Brussel en Parijs. Vroeger heette dit Thalys.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
         <p>© 2026 NS Treinen Mega-Database Project — Gemaakt door een echte kenner</p>
     </footer>
 
+    <div id="cookieBanner" class="cookie-balk">
+        <p>
+            nstreinen.nl gebruikt functionele cookies om de website goed te laten werken. 
+            Door op accepteren te klikken ga je akkoord met onze 
+            <a href="voorwaarden.html" target="_blank">Algemene Voorwaarden</a>.
+        </p>
+        <button id="cookieKnop">Accepteren</button>
+    </div>
+
     <script>
-        // We selecteren de zoekbalk via het juiste ID
         const zoekbalk = document.getElementById('treinZoeker');
+        const treinKaartjes = document.querySelectorAll('.trein-kaart');
         
-        // We luisteren naar wat je typt
-        zoekbalk.addEventListener('input', function(e) {
-            const zoekTerm = e.target.value.toLowerCase();
-            const treinKaartjes = document.querySelectorAll('.trein-kaart');
+        // 1. DE ZOEKBALK FUNCTIONALITEIT
+        if (zoekbalk) {
+            zoekbalk.addEventListener('input', function(e) {
+                const zoekTerm = e.target.value.toLowerCase();
 
-            treinKaartjes.forEach(function(kaartje) {
-                const treinTekst = kaartje.textContent.toLowerCase();
+                treinKaartjes.forEach(function(kaartje) {
+                    const treinTekst = kaartje.textContent.toLowerCase();
 
-                if (treinTekst.includes(zoekTerm)) {
-                    kaartje.style.display = 'flex'; // Laat zien als het matcht
-                } else {
-                    kaartje.style.display = 'none';  // Verberg als het niet matcht
+                    if (treinTekst.includes(zoekTerm)) {
+                        kaartje.style.display = 'flex';
+                    } else {
+                        kaartje.style.display = 'none';
+                    }
+                });
+            });
+        }
+
+        // 2. DOORSTUREN NAAR JE EIGEN INFOPAGINA
+        treinKaartjes.forEach(function(kaartje) {
+            kaartje.addEventListener('click', function() {
+                const titel = kaartje.querySelector('h3').textContent;
+                const metaElement = kaartje.querySelector('.trein-info p:nth-of-type(1)');
+                const meta = metaElement ? metaElement.textContent : '';
+                const alleP = kaartje.querySelectorAll('.trein-info p');
+                const tekst = alleP.length > 0 ? alleP[alleP.length - 1].textContent : '';
+                const fotoSrc = kaartje.querySelector('.trein-foto').src;
+                
+                let periode = "";
+                alleP.forEach(function(p) {
+                    if (p.textContent.includes("Jaar:") || p.textContent.includes("Periode:") || p.textContent.includes("Bouwjaar:")) {
+                        periode = p.textContent.replace(/Jaar:|Periode:|Bouwjaar:|Type:/g, '').trim();
+                    }
+                });
+
+                if (!periode && kaartje.querySelector('.trein-jaar')) {
+                    periode = kaartje.querySelector('.trein-jaar').textContent.replace(/Jaar:|Periode:/g, '').trim();
                 }
+
+                const doelUrl = `trein.html?titel=${encodeURIComponent(titel)}&meta=${encodeURIComponent(meta)}&periode=${encodeURIComponent(periode)}&tekst=${encodeURIComponent(tekst)}&foto=${encodeURIComponent(fotoSrc)}`;
+                window.location.href = doelUrl;
             });
         });
+
+        // 3. COOKIE & ALGEMENE VOORWAARDEN VRAAG
+        const banner = document.getElementById('cookieBanner');
+        const acceptKnop = document.getElementById('cookieKnop');
+
+        if (!localStorage.getItem('cookiesGeaccepteerd')) {
+            banner.style.display = 'flex';
+        }
+
+        if (acceptKnop) {
+            acceptKnop.addEventListener('click', function(e) {
+                e.stopPropagation(); 
+                localStorage.setItem('cookiesGeaccepteerd', 'true');
+                banner.style.display = 'none'; 
+            });
+        }
     </script>
 
 </body>

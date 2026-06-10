@@ -1,144 +1,185 @@
-/* 1. GLOBALE INSTELLINGEN */
-    body {
-    /* Dit maakt een verloop van diep NS-blauw naar een stoere, donkere spoorweg-tint */
-    background: linear-gradient(135deg, #002d62 0%, #1c2d42 100%);
-    
-    /* Dit zorgt ervoor dat de achtergrond mooi meeskrallt als de pagina lang is */
-    background-attachment: fixed; 
-    
-    color: #1c2d42;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* ==========================================================================
+   NS TREINEN MEGA-DATABASE — VOLLEDIGE LAY-OUT (style.css)
+   ========================================================================== */
+
+/* Basisinstellingen */
+body {
+    background-color: #002d62; /* Het echte NS Donkerblauw */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
-
-/* 2. DE HEADER (BOVENBALK) */
+/* De Header (Kop van de website) */
 header {
-    background-color: #ffc914; /* NS Geel */
-    color: #002d62; /* NS Blauw */
+    background-color: #ffc914; /* Het echte NS Geel */
+    color: #002d62;
+    padding: 30px 20px;
     text-align: center;
-    padding: 40px 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.6rem;
-    font-weight: 800;
-    letter-spacing: -1px;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 header p {
+    margin: 5px 0 0 0;
     font-size: 1.2rem;
-    margin-top: 10px;
-    font-weight: 500;
 }
 
-/* Het NS-logo nagebouwd in CSS */
-.ns-logo-placeholder {
-    width: 65px;
-    height: 35px;
-    background-color: #002d62;
-    margin: 0 auto 15px auto;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffc914;
-    font-weight: bold;
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-
-/* 3. DE LAYOUT VAN DE PAGINA */
-main {
-    max-width: 1000px;
+/* De Zoekbalk */
+.zoek-container {
+    max-width: 600px;
     margin: 30px auto;
     padding: 0 20px;
 }
 
-/* Categorie koppen (zoals Moderne Generatie) */
-h2 {
-    color: #ffffff; /* Veranderd naar wit zodat het perfect leesbaar is op donkerblauw */
-    font-size: 1.8rem;
-    border-bottom: 4px solid #ffc914;
-    padding-bottom: 8px;
-    margin-top: 50px;
+#treinZoeker {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    border: 3px solid #ffc914;
+    border-radius: 30px;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* 4. DE TREINKAARTJES */
+#treinZoeker:focus {
+    border-color: #e0b010;
+    background-color: #fffde6;
+}
+
+/* De Database Grid (Alle treinkaartjes naast elkaar) */
+.database-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 80px; /* Ruimte voor de cookiebalk */
+}
+
+/* Losse Treinkaartjes */
 .trein-kaart {
     background-color: white;
-    border-left: 6px solid #002d62; /* Blauwe NS-rand */
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    
-    /* Dit zorgt dat tekst en foto strak naast elkaar staan */
-    display: flex; 
-    gap: 25px;
-    align-items: center;
-    
-    /* Zorgt voor een soepele overgang bij het eroverheen bewegen met de muis */
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer; /* Zorgt voor het klik-handje */
 }
 
-/* Effect als je met je muis over een trein-kaartje zweeft */
 .trein-kaart:hover {
-    transform: translateY(-4px); /* Kaartje komt een klein stukje omhoog */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Schaduw wordt dieper */
-    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
-/* De tekst binnen een kaartje */
+/* Foto in het kaartje */
+.trein-foto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 4px solid #ffc914;
+}
+
+/* Informatie in het kaartje */
 .trein-info {
-    flex: 1; /* Neemt alle resterende ruimte aan de linkerkant in */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
-.trein-kaart h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
+.trein-info h3 {
+    margin: 0 0 10px 0;
     color: #002d62;
     font-size: 1.4rem;
 }
 
-.trein-kaart p {
-    margin: 6px 0;
-    line-height: 1.5;
+.trein-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+    line-height: 1.4;
 }
 
-.trein-kaart strong {
-    color: #002d62;
-}
-
-/* 5. DE FOTO'S VAN DE TREINEN */
-.
-/* Styling voor de zoekbalk container */
-.zoek-container {
-    max-width: 1000px;
-    margin: 30px auto 10px auto;
-    padding: 0 20px;
+/* De Footer (Onderkant van de pagina) */
+footer {
+    background-color: #001a3a;
+    color: white;
     text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
 }
 
-/* De zoekbalk zelf */
-#treinZoeker {
+/* ==========================================================================
+   COOKIEBANNER & ALGEMENE VOORWAARDEN BALK
+   ========================================================================== */
+.cookie-balk {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    max-width: 600px;
+    background-color: #fff4cc; /* Prachtig lichtgeel */
+    border-top: 4px solid #ffc914; /* NS Gele rand */
+    color: #002d62; /* NS Donkerblauw */
     padding: 15px 20px;
-    font-size: 1.1rem;
-    border: 3px solid #ffc914; /* NS Geel randje */
-    border-radius: 30px; /* Mooie ronde hoeken */
-    outline: none;
-    background-color: white;
-    color: #002d62;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: box-shadow 0.2s ease;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+    display: none; /* Wordt door JavaScript op 'flex' gezet indien nodig */
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 99999; /* Zorgt dat hij ALTIJD overal bovenop zweeft */
+    font-family: Arial, sans-serif;
 }
 
-/* Als je in de zoekbalk klikt */
-#treinZoeker:focus {
-    box-shadow: 0 6px 15px rgba(255, 201, 20, 0.4);
+.cookie-balk p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.cookie-balk a {
+    color: #002d62;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.cookie-balk button {
+    background-color: #002d62;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.2s;
+    font-size: 1rem;
+}
+
+.cookie-balk button:hover {
+    background-color: #001a3a;
+    transform: scale(1.05);
+}
+
+/* Responsive instellingen voor telefoons */
+@media (max-width: 600px) {
+    .cookie-balk {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    .cookie-balk p {
+        padding-right: 0;
+    }
 }

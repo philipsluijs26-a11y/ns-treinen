@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trein Informatie</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Volledige styling voor de infopagina in NS-vibe */
+        body {
+            background-color: #002d62; /* NS Donkerblauw */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .info-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+        .info-foto {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 4px solid #ffc914; /* NS Gele rand om de foto */
+        }
+        .terug-knop {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 12px 24px;
+            background: #ffc914;
+            color: #002d62;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: 0.2s;
+        }
+        .terug-knop:hover { 
+            background: #e0b010; 
+            transform: scale(1.05);
+        }
+        .periode-balk {
+            font-size: 1.3rem;
+            color: #002d62;
+            font-weight: bold;
+            background: #fff4cc;
+            padding: 10px 20px;
+            border-radius: 30px;
+            margin: 15px 0;
+            display: inline-block;
+            border: 1px solid #ffc914;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="info-container">
+        <a href="index.html" class="terug-knop">⬅ Terug naar de Database</a>
+        
+        <h1 id="info-titel" style="color: #002d62; font-size: 2.5rem; margin-bottom: 5px;">Treinnaam</h1>
+        <p id="info-meta" style="color: #666; font-style: italic; margin-top: 0;"></p>
+        
+        <div id="info-periode" class="periode-balk"></div>
+        
+        <br>
+        <img id="info-afbeelding" class="info-foto" src="" alt="Trein foto">
+        <p id="info-tekst" style="font-size: 1.2rem; text-align: left; line-height: 1.6; color: #222; padding: 0 10px;"></p>
+    </div>
+
+    <script>
+        // JavaScript leest de meegestuurde gegevens uit de URL
+        const params = new URLSearchParams(window.location.search);
+        const titel = params.get('titel');
+        const meta = params.get('meta');
+        const periode = params.get('periode');
+        const tekst = params.get('tekst');
+        const fotoSrc = params.get('foto');
+
+        // De gegevens op de juiste plek in de HTML zetten
+        document.getElementById('info-titel').textContent = titel;
+        document.getElementById('info-meta').textContent = meta;
+        document.getElementById('info-tekst').textContent = tekst;
+        document.getElementById('info-afbeelding').src = fotoSrc;
+        document.getElementById('info-afbeelding').alt = titel;
+        
+        // Controleren of er een geldige rijperiode is gevonden
+        const periodeBalk = document.getElementById('info-periode');
+        if (periode && periode.trim() !== "" && periode !== "undefined") {
+            periodeBalk.textContent = "Rijperiode: " + periode;
+            periodeBalk.style.display = 'inline-block';
+        } else {
+            // Als er geen jaartal is opgegeven, verbergen we het gele balkje automatisch
+            periodeBalk.style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
